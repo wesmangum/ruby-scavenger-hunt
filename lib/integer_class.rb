@@ -18,6 +18,6 @@ class Integer
   end
 
   def prime_factors
-    self.factor.keep_if { |x| Prime.instance.prime?(x) }
+    self.factors.keep_if { |x| Prime.instance.prime?(x) }
   end
 end
